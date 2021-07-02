@@ -8,11 +8,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    height: 100vh;
 }
 .header{
     width: 15%;
-    padding: 80px 0px 0px;
+    padding: 78px 0px 46px;
     background-color: #000;
+    display: inline-block;
 }
 .img{
     width: 150px; height: 150px;
@@ -40,9 +42,28 @@
     line-height: 28px;
 }
 h1{
-    width: 85%;
-    font-size: 80px;
+    width: 84%;
+    font-size: 46px;
     color: #fff;
     text-align: center;
-    margin: 200px auto 0px;
+    display: inline-flex;
+    margin: 350px 0px 0px 160px;
+    position: fixed;
 }
+.wrapper{
+    width: 85%;
+    display: inline;
+}
+.four li{
+   color: #fff;
+   margin: 25px 46px;
+   list-style: none;
+   font-size: 20px;
+}
+@media (min-width : 320px) and (max-width : 667px) {
+    /* Styles */
+        h1{
+            position: none;
+            display: none;
+        }
+    }
